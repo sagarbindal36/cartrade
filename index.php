@@ -132,7 +132,7 @@ background:linear-gradient(to bottom,yellow,green);		}
                     <div class="panel-body">
                     <div class="row">
                    <div class="col-md-6">
-                    <img class="img-responsive" src="maruti-suzuki-swift-9322_380x240.png">
+                    <img class="img-responsive" src="img/maruti-suzuki-swift-9322_380x240.png">
                     </div>
                     <div class="col-md-3">
                     <div class="row">

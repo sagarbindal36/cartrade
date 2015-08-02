@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function process(str) {
+{
+	if(window.XMLHttpRequest)
+	{
+		xmlhttp=new XMLHttpRequest();
+		}
+		else
+		{
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function()
+			{
+				if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+				{
+				document.getElementById("txt").innerHTML=xmlhttp.responseText;	
+				}
+				}
+				xmlhttp.open("GET","getdata.php?q="+str,true);
+				xmlhttp.send();
+	}
+}
+</script>
+
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+
+<form>
+<select  onchange="process(this.value)">
+<option value="">Select car</option>
+<option value="1">&nbsp; Swift</option>
+<option value="2">&nbsp; i20</option>
+<option value="3">&nbsp; Polo</option>
+</select>
+</form><br>
+
+<div id="txt"></div>
+
+</body>
+
+</html>
